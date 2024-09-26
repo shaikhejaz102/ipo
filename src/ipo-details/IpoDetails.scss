@@ -1,0 +1,268 @@
+.pages__header {
+  padding: 15px;
+}
+
+.back_buttton {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+
+.details {
+  border-radius: 50rem;
+  border: 0.1px solid gray;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.details-photo {
+  width: -webkit-fill-available;
+  border-radius: 50rem;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+}
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.stepper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.step .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.step .label {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.circle.active {
+  background-color: #4caf50;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+}
+
+.line.active {
+  background-color: #4caf50;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .pages__header {
+    padding: 10px;
+  }
+
+  .pages__header h3 {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .back_buttton {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .details-photo {
+    width: 4rem;
+    height: 4rem; 
+  }
+
+  .mx-3 {
+    margin: 0;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .d-flex.justify-content-between div {
+    margin-bottom: 10px;
+  }
+
+  .mx-3 img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .rounded-4 {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .div-border{
+    border: none !important;
+  }
+
+  .stepper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .step .circle {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    margin: 0;
+  }
+
+  .step .label {
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+
+  .step .date {
+    font-size: 0.9rem;
+    color: gray;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+
+  .line {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .div-border{
+    border: none !important;
+  }
+
+  .border-0.bg-transparent{
+    width: 4.5rem;
+  }
+
+  .back_buttton {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start I !important;
+  }
+
+  .details-photo {
+    width: 3rem; 
+    height: 3rem; 
+  }
+
+  .rounded-4 {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step .circle {
+    left: 10px;
+    top: 0;
+  }
+
+  .step .label {
+    margin-left: 60px;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .step .date {
+    margin-left: 60px;
+    font-size: 0.85rem;
+  }
+
+  .line {
+    width: 5px;
+    height: 100%;
+    left: 28px;
+    top: 50%;
+  }
+  .btn-link {
+    font-size: 0.9rem;
+  }
+}
+
